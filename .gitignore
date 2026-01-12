@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Eleventy output
+_site/
+
+# OS junk
+.DS_Store
+
+# Logs
+npm-debug.log*
+
