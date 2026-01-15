@@ -1,4 +1,13 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("res");
-  eleventyConfig.addPassthroughCopy("css");  // <-- copy your CSS
+  // Copy static assets straight through to _site
+  eleventyConfig.addPassthroughCopy("src/res");
+  eleventyConfig.addPassthroughCopy("src/css");
+
+  return {
+    dir: {
+      input: "src",
+      includes: "_includes",
+      output: "_site"
+    }
+  };
 };
