@@ -1,4 +1,8 @@
-<link rel="stylesheet" href="/css/styles.css">
+---
+layout: layouts/base.njk
+title: Walker McKee
+---
+
 # Hello! I’m Walker, a developer based in Charleston 
 
 I enjoy building tools that automate workflows and enable creative problem-solving.

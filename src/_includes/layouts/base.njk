@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+    <header class="p-6 bg-white shadow-md mb-8">
+        <h1 class="text-3xl font-bold">{{ title | default("Portfolio") }}</h1>
+    </header>
+
+    <main class="px-6">
+        {{ content | safe }}
+    </main>
+
+    <footer class="p-6 text-center text-sm text-gray-500 mt-12">
+        &copy; 2026 Walker McKee
+    </footer>
+</body>
+</html>
+
