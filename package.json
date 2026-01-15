@@ -2,21 +2,23 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": ".eleventy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sparse808/Portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "dependencies": {
-    "@11ty/eleventy": "^3.1.2"
+  "bugs": {
+    "url": "https://github.com/Sparse808/Portfolio/issues"
   },
+  "homepage": "https://github.com/Sparse808/Portfolio#readme",
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.18",
-    "autoprefixer": "^10.4.23",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.18"
+    "@11ty/eleventy": "^3.1.2"
   }
 }
