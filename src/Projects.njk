@@ -1,0 +1,19 @@
+---
+titel: Projects
+layout: 'base.njk'
+---
+
+
+
+<h1>Projects:<h1>
+
+<ul>
+    
+    {%- for project in collections.project -%}
+    <li>
+        {% include 'projectArticleTemplate.njk'%}
+    </li>
+    
+    {%- endfor -%}
+</ul>
+

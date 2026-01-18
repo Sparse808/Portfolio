@@ -1,0 +1,6 @@
+<article>
+            <img src = "{{ project.data.image }}" alt="Profile Picture" class="profile-photo">
+            <h3>{{ project.data.title }}</h3>
+            <h4>{{ project.data.date | projectDate}}</h4>
+            <a href="{{ project.url }}">link</a>
+        </article>
