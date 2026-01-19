@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="/css/output.css">
     <title>{{title}}</title>
 </head>
-<body>
+<body class="flex flex-col min-h-screen">
     {% include 'header.njk' %}
-    <main>
+    <main class="flex-1">
         <div class="max-w-5xl mx-auto px-6">
         {{ content | safe }}
         </div>

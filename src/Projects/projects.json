@@ -1,4 +1,4 @@
 {
     "tags": "projects",
-    "layout": "project"
+    "layout": "projectTemplate.njk"
 }
