@@ -1,6 +1,37 @@
-<article>
-            <img src = "{{ project.data.image }}" alt="Profile Picture" class="profile-photo">
-            <h3>{{ project.data.title }}</h3>
-            <h4>{{ project.data.date | projectDate}}</h4>
-            <a href="{{ project.url }}">link</a>
-        </article>
+<article class="w-full max-w-5xl bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all flex flex-col md:flex-row">
+  <!-- Image -->
+  <div class="flex-shrink-0 md:w-2/5">
+    <img
+      src="{{ project.data.image }}"
+      alt="{{ project.data.title }}"
+      class="w-full h-full object-cover object-top rounded-l-3xl md:rounded-l-3xl md:rounded-r-none"
+    />
+  </div>
+
+  <!-- Content -->
+  <div class="p-8 md:p-10 flex-1 flex flex-col justify-between">
+    <div>
+      <h3 class="text-2xl font-bold text-gray-900 mb-2">
+        <a href="{{ project.url }}" class="hover:underline">
+          {{ project.data.title }}
+        </a>
+      </h3>
+      <p class="text-gray-500 text-sm mb-4">
+        {{ project.data.date | projectDate }}
+      </p>
+      <p class="text-gray-700">
+        {{ project.data.description }}
+      </p>
+    </div>
+
+    <!-- Optional CTA button -->
+    <div class="mt-6">
+      <a
+        href="{{ project.url }}"
+        class="inline-block text-blue-600 font-semibold hover:underline"
+      >
+        View Project →
+      </a>
+    </div>
+  </div>
+</article>

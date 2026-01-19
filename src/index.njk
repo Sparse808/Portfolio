@@ -2,18 +2,76 @@
 title: example
 layout: 'base.njk'
 ---
+<section class="py-32">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <div class="max-w-xl">
+      <h1 class="text-5xl font-bold text-gray-900 leading-tight mb-6">
+        Hi, I’m Walker.<br />
+        <span class="text-red-600">
+          I build practical software.
+        </span>
+      </h1>
 
-    <h1>Hello! I’m Walker, a developer based in Charleston</h1>
-    <p>I enjoy building tools that automate workflows and enable creative problem-solving.</p>
-    <p>I hold a Bachelor’s degree in Computer Science from Georgia Southern University, with a concentration in software engineering. Since graduating, I’ve been working at Mediterranean Shipping Company, where my role spans scaling processing through automation and building internal tools that streamline procurement and operational workflows.</p>
-    <p>Working in a global organization has given me the opportunity to collaborate with teams of all sizes across multiple regions, sharpening both my technical and communication skills. I focus on delivering practical, well-engineered solutions that bring measurable improvements to complex systems, particularly within the ocean freight and logistics space. </p>
-    <img src="/res/ProfilePicture.jpg" alt="Profile Picture" class="profile-photo">
-    <h1>Projects<h1>
-    <ul>
-        {%- for project in collections.featured -%}
-            <li>
-                {% include 'projectArticleTemplate.njk' %}
-            </li>
-        {%- endfor -%}
+      <p class="text-lg text-gray-600 mb-6">
+        I’m a developer based in Charleston focused on building tools that automate workflows and simplify complex systems.
+      </p>
+
+      <p class="text-gray-600 mb-6">
+        I hold a Bachelor’s degree in Computer Science from Georgia Southern University and currently work at Mediterranean Shipping Company, where I build internal tools and automation that improve operational efficiency.
+      </p>
+
+      <p class="text-gray-600">
+        I enjoy working on well-scoped problems, clean systems, and software that makes people’s jobs easier.
+      </p>
+    </div>
+
+    <div class="flex justify-center">
+      <img
+        src="/res/ProfilePicture.jpg"
+        alt="Profile Picture"
+        class="rounded-2xl max-w-sm shadow-lg"
+      />
+    </div>
+  </div>
+</section>
+
+    
+<section class="py-32 bg-gray-100 border-t border-gray-300">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Section header -->
+    <div class="text-center mb-20">
+      <h2 class="text-4xl font-extrabold text-gray-900 mb-4">
+        Featured Projects
+      </h2>
+      <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+        A small selection of projects where I focused on practical software, clean architecture, and tools that make workflows more efficient.
+      </p>
+    </div>
+
+    <!-- Projects List -->
+    <ul class="flex flex-col gap-16">
+      {%- for project in collections.featured -%}
+        <li class="flex justify-center">
+          {% include "projectArticleTemplate.njk" %}
+        </li>
+      {%- endfor -%}
     </ul>
+
+    <!-- Optional Projects Nav -->
+    <div class="mt-20 text-center">
+      <a
+        href="/Projects"
+        class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition"
+      >
+        View All Projects →
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
 
