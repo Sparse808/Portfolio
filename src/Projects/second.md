@@ -4,7 +4,7 @@ author: Walker McKee
 tags: ['project', 'featured']
 date: 2026-01-19
 image: /res/ProfilePicture.jpg
-layout: base.njk
+layout: projectTemplate.njk
 description: Hello
 ---
 

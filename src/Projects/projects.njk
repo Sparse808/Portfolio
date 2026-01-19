@@ -1,18 +1,27 @@
 ---
-titel: Projects
+title: Projects
 layout: 'base.njk'
 ---
 
+<section class="py-32 bg-gray-50 min-h-screen">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Page Header -->
+    <div class="text-center mb-20">
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4">
+        Projects
+      </h1>
+      <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+        A showcase of all my projects, including work on practical software, internal tools, and workflow automation.
+      </p>
+    </div>
 
-
-<h1>Projects:<h1>
-
-<ul>
-    
-    {%- for project in collections.project -%}
-    <li>
-        {% include 'projectArticleTemplate.njk'%}
-    </li>
-    
-    {%- endfor -%}
-</ul>
+    <!-- Projects Grid -->
+     <ul class="flex flex-col gap-16">
+      {%- for project in collections.project -%}
+        <li class="flex justify-center">
+          {% include 'projectArticleTemplate.njk' %}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
